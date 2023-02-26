@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      src="https://kit.fontawesome.com/ea26e84072.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="icon" type="image/x-icon" href="Favicon/DrawingAppFavicon.png" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="title.css" />
+    <link rel="stylesheet" href="social.css" />
+
+    <title>Drawing App</title>
+  </head>
+  <body>
+    <div class="bg_move">
+      <i class="fas fa-palette"></i>
+      <h1>Drawing APP Clone</h1>
+    </div>
+
+    <div class="mainContainer">
+      <div class="container">
+        <section class="tools-board">
+          <div class="row">
+            <label class="Title" for="">Shapes</label>
+            <ul class="options">
+              <li class="option tool" id="Rectangle">
+                <img src="icons/rectangle.svg" alt="Rectangle" />
+                <span>Rectangle</span>
+              </li>
+              <li class="option tool" id="Circle">
+                <img src="icons/circle.svg" alt="Circle" />
+                <span>Circle</span>
+              </li>
+              <li class="option tool" id="Triangle">
+                <img src="icons/triangle.svg" alt="Triangle" />
+                <span>Triangle</span>
+              </li>
+              <li class="option">
+                <input type="checkbox" id="fill-color" />
+                <label for="fill-color">Fill Color</label>
+              </li>
+            </ul>
+          </div>
+          <div class="row">
+            <label class="Title" for="">Tools</label>
+            <ul class="options">
+              <li class="option active tool" id="Brush">
+                <img src="icons/brush.svg" alt="Brush" />
+                <span>Brush</span>
+              </li>
+              <li class="option tool" id="Eraser">
+                <img src="icons/eraser.svg" alt="Eraser" />
+                <span>Eraser</span>
+              </li>
+              <li class="option input">
+                <input
+                  type="range"
+                  id="size-slider"
+                  min="1"
+                  max="15"
+                  value="2"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="row colors">
+            <label class="Title" for="">Colors</label>
+            <ul class="options">
+              <li class="option color"></li>
+              <li class="option color"></li>
+              <li class="option color selected"></li>
+              <li class="option color"></li>
+              <li class="option color"></li>
+            </ul>
+            <input type="color" id="color-picker" value="#b063f8" />
+          </div>
+          <div class="row buttons">
+            <button class="button clear-canvas">
+              <span class="button-content">Clear Canvas</span>
+            </button>
+            <button class="button save-img">
+              <span class="button-content">Save as img</span>
+            </button>
+          </div>
+        </section>
+        <section class="drawing-board">
+          <canvas></canvas>
+        </section>
+      </div>
+    </div>
+
+    <div class="mobile-msg">
+      <h1>Please open it on Larger Screen</h1>
+    </div>
+    <script src="index.js"></script>
+
+    <footer>
+      <div>
+        <p>&#169; 2023 Ayush</p>
+      </div>
+
+      <br>
+
+      <div class="wrapper">
+        <div class="socialBtn ln-bg">
+          <div class="icon">
+            <a href="https://www.linkedin.com/in/ayush-kumar-432801206/" target="_blank">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+        <div class="socialBtn git-bg">
+          <div class="icon">
+            <a href="https://github.com/itsayu/" target="_blank">
+              <i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+        </div>
+        <div class="socialBtn tw-bg">
+          <div class="icon">
+            <a href="https://twitter.com/its_AKT_/" target="_blank">
+              <i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+        <div class="socialBtn p-bg">
+          <div class="icon">
+            <a href="tel:7481946468"><i class="fa-solid fa-phone"></i></a>
+          </div>
+        </div>
+        <div class="socialBtn co-bg">
+          <div class="icon">
+            <a href="https://codepen.io/itsayu/" target="_blank">
+              <i class="fa-brands fa-codepen"></i
+            ></a>
+          </div>
+        </div>
+        <div class="socialBtn st-bg">
+          <div class="icon">
+            <a href="https://stackoverflow.com/users/18422627/itsayu/" target="_blank">
+              <i class="fa-brands fa-stack-overflow"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

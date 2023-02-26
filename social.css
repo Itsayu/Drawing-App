@@ -1,0 +1,56 @@
+.wrapper {
+  display: flex;
+  margin-left: 10px;
+}
+
+.wrapper .socialBtn {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  margin: 5px 10px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgb(0 0 0 / 10%);
+}
+
+.wrapper .socialBtn .icon {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  border-radius: 50%;
+  box-sizing: border-box;
+  line-height: 40px;
+  transition: all 0.3s ease-out;
+}
+
+.ln-bg:hover i {
+  color: #3c6ccd;
+}
+
+.git-bg:hover i {
+  color: #434242;
+}
+
+.tw-bg:hover i {
+  color: #5787e9;
+}
+
+.p-bg:hover i {
+  color: #33cb33;
+}
+
+.co-bg:hover i {
+  color: #000;
+}
+
+.st-bg:hover i {
+  color: #ffa500;
+}
+
+.wrapper .socialBtn .icon i {
+  font-size: 20px;
+  line-height: 15px;
+}
